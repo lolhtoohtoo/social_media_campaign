@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+:root{
+    --whiteColor : #FFFFFF;
+    --tealBlueColor : #007a99;
+    --lightBlueColor : #add8e6;
+    --lightBlueColorWithOpacity : #add8e688;
+    --brownOrangeColor : #fd7e14;
+    --orangeColor : #ffa500;
+    --orangeColorWithOpacity : #ffa60062;
+    --pureBlackColor : #000000;
+    --darkBlackColor : #202020;
+    --greyTransparentColor : rgba(128, 128, 128, 0.541);
+    --greyBackgroudTransparent : rgba(128, 128, 128, 0.349);
+    --greenColor : rgb(0, 182, 0);
+    --redColor : red;
+    --greyColor : rgb(85, 85, 85);
+    --ultraFontSize : 28px;
+    --bigFontSize : 22px;
+    --bigMediumFontSize : 18px;
+    --bigMediumMediumFontSize : 16px;
+    --mediumFontSize: 14px;
+    --smallFontSize : 11px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100svh;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: var(--whiteColor);
+    cursor: url("/app/assets/cursors/icons8-cursor.svg"), auto;
+}
+
+a:hover{
+    cursor: url("/app/assets/cursors/icons8-hover.svg"), auto;
+}
+
+button:hover{
+    cursor: url("/app/assets/cursors/icons8-hover.svg"), auto;
+}
+
+.logoFont{
+    font-family: "Rubik Doodle Shadow",  sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+/* all backgroundcolors */
+.backgroundLightBlue{
+    background-color: var(--lightBlueColor);
+}
+
+.backgroundTealBlue{
+    background-color: var(--tealBlueColor);
+}
+
+.backgroundBlack{
+    background-color: var(--pureBlackColor);
+}
+
+.backgroundGreyTransparent{
+    background-color: var(--greyBackgroudTransparent);
+}
+
+
+
+
+/* all colors */
+.orangeColor{
+    color: var(--orangeColor);
+}
+
+.brownOrangeColor{
+    color: var(--brownOrangeColor);
+}
+
+.lightBlueColor{
+    color: var(--lightBlueColor);
+}
+
+.tealBlueColor{
+    color: var(--tealBlueColor);
+}
+
+.greenColor{
+    color: var(--greenColor);
+}
+
+.redColor{
+    color: var(--redColor);
+}
+
+.darkBlackColor{
+    color: var(--darkBlackColor);
+}
+
+.greyColor{
+    color: var(--greyColor);
+}
+
+
+
+
+/* all fontsizes */
+.ultraFont{
+    font-size: var(--ultraFontSize);
+}
+
+.bigFont{
+    font-size: var(--bigFontSize);
+}
+
+.bigMediumFont{
+    font-size: var(--bigMediumFontSize);
+}
+
+.bigMediumMediumFont{
+    font-size: var(--bigMediumMediumFontSize);
+}
+
+.mediumFont{
+    font-size: var(--mediumFontSize);
+}
+
+.smallFont{
+    font-size: var(--smallFontSize);
+}
+
+
+
+
+/* all fontweights */
+.fontWeightBold{
+    font-weight: bold;
+}
+
+
+
+
+/* all textcolors */
+.textWhite{
+    color: var(--whiteColor);
+}
+
+
+
+
+
+#contentBody{
+    padding-bottom: 60px;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer > span{
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+footer > div{
+    text-align: center;
+    color: var(--whiteColor);
+    padding: 5px 0px;
+}
+
+
+
+
+
+/* button designs */
+.buttonDesign1{
+    background-color: transparent;
+    border: 2px solid var(--tealBlueColor);
+    border-radius: 5px;
+    color: var(--brownOrangeColor);
+    font-size: var(--mediumFontSize);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.buttonDesign1:active{
+    background-color: var(--greyTransparentColor);
+}

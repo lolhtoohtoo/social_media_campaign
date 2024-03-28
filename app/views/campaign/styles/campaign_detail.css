@@ -1,0 +1,89 @@
+.imageBox{
+    width: 400px;
+    height: 300px;
+    padding: 0px 10px;
+    object-fit: cover; 
+}
+
+#campaignDetailArticle{
+    padding: 0px 40px;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#campaignDetailArticle > figure{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#campaignDetailArticle > figure > figcaption{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#campaignDetailArticle > figure > #imageList{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    overflow-y: scroll;
+}
+
+.mapBox{
+    width: 600px;
+    height: 450px;
+    border: 1px solid var(--orangeColor);
+    border-radius: 10px;
+}
+
+#campaignTitleWithParticipate{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.makeVertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.makeDisplayInline{
+    display: inline;
+}
+
+.campaignDetailAddress{
+    display: block;
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width: 600px){
+    #campaignDetailArticle{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imageBox{
+        width: 100%;
+        height: calc((100% / 4) * 2.3);
+        object-fit: cover;
+        margin: auto;
+        padding: 0px 10px;
+    }
+
+    .mapBox{
+        width: 80vw;
+        height: 60vw;
+    }
+}

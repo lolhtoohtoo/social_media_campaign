@@ -1,0 +1,36 @@
+#infoSection{
+    margin: auto;
+}
+
+.infoTitle{
+    text-align: center;
+}
+
+.campaignImage{
+    width: 280px;
+    height: 190px;
+    object-fit: cover; 
+}
+
+.infoSingleCampaign{
+    position: relative;
+    padding: 15px 0px;
+}
+
+.infoSingleCampaign > a{
+    position: absolute;
+    right: 0;
+}
+
+/* .infoSingleCampaign > a > button{
+    background-color: transparent;
+    border: 2px solid var(--tealBlueColor);
+    border-radius: 5px;
+    color: var(--brownOrangeColor);
+    font-size: var(--mediumFontSize);
+    padding: 5px 10px;
+}
+
+.infoSingleCampaign > a > button:active{
+    background-color: var(--greyTransparentColor);
+} */

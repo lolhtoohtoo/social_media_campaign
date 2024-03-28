@@ -1,0 +1,103 @@
+.formBackground{
+    height: 100%;
+    padding: 30px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isAdminTxt{
+    font-weight: normal;
+    font-size: var(--mediumFontSize);
+}
+
+.isAdminLink{
+    color: var(--orangeColor);
+    font-weight: bold;
+    font-size: var(--bigMediumMediumFontSize);
+}
+
+.formTitle{
+    font-size: var(--bigFontSize);
+    font-weight: bold;
+    color: var(--tealBlueColor);
+    padding-bottom: 10px;
+}
+
+.formBox{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-radius: 20px;
+}
+
+.formRow{
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.formRow > input{
+    border-radius: 5px;
+    border: 1px solid var(--lightBlueColor);
+    padding: 5px 10px;
+    background-color: var(--orangeColorWithOpacity);
+    outline: none;
+    width: 250px;
+}
+
+.formRow > select{
+    border-radius: 5px;
+    border: 1px solid var(--lightBlueColor);
+    padding: 5px 10px;
+    background-color: var(--lightBlueColorWithOpacity);
+    outline: none;
+}
+
+.formRow > input:focus{
+    border-radius: 5px;
+    background-color: var(--orangeColorWithOpacity);
+    border: 2px solid var(--tealBlueColor);
+}
+
+.formRow > input[type="checkbox"]:checked{
+    accent-color: var(--tealBlueColor);
+}
+
+.formRow > textarea{
+    border-radius: 5px;
+    border: 1px solid var(--lightBlueColor);
+    padding: 5px 10px;
+    background-color: var(--orangeColorWithOpacity);
+    outline: none;
+    width: 250px;
+}
+
+.formRow > label{
+    font-size: var(--bigMediumMediumFontSize);
+    color: var(--darkBlackColor);
+}
+
+.topMargin{
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .formRow > input{
+        width: 200px;
+    }
+
+    .formRow > textarea{
+        width: 200px;
+    }
+}
